@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pari's Milkshake Point</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between w-100">
+                <!-- Left Section -->
+                <a href="https://github.com/pmalhotra21/dev-harry-final-project" target="_blank" class="btn btn-outline-secondary">
+                    Source Code
+                </a>
+                <!-- Right Section -->
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fpmalhotra21.github.io%2Fdev-harry-final-project%2F" target="_blank" class="btn btn-outline-secondary">
+                    Nu HTML Validator
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-light py-5 text-center" id="header">
+        <h1 class="display-4">Welcome to Pari's Milkshake Point</h1>
+        <p>Your favorite place for milkshakes and more!</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <form id="order-form">
+                            <!-- Name -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label"><strong>Your Name:</strong></label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="mb-3">
+                                <label for="phone" class="form-label"><strong>Phone Number:</strong></label>
+                                <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                            </div>
+
+                            <!-- Milkshake Selection -->
+                            <div class="mb-3">
+                                <label for="milkshake" class="form-label"><strong>Choose Milkshake:</strong></label>
+                                <select id="milkshake" class="form-select">
+                                    <option value="Vanilla Milkshake">Vanilla Milkshake</option>
+                                    <option value="Chocolate Milkshake">Chocolate Milkshake</option>
+                                    <option value="Strawberry Milkshake">Strawberry Milkshake</option>
+                                </select>
+                            </div>
+
+                            <!-- Milkshake Extras -->
+                            <label><strong>Milkshake Extras:</strong></label>
+                            <div class="form-check">
+                                <input type="checkbox" name="extras" value="Whipped Cream" class="form-check-input" id="whipped-cream">
+                                <label class="form-check-label" for="whipped-cream">Whipped Cream</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="extras" value="Sprinkles" class="form-check-input" id="sprinkles">
+                                <label class="form-check-label" for="sprinkles">Sprinkles</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="extras" value="Cherry on Top" class="form-check-input" id="cherry">
+                                <label class="form-check-label" for="cherry">Cherry on Top</label>
+                            </div>
+
+                            <!-- Milkshake Size -->
+                            <div class="mb-3">
+                                <label><strong>Milkshake Size:</strong></label>
+                                <div class="form-check">
+                                    <input type="radio" name="size" value="Small" class="form-check-input" id="small">
+                                    <label class="form-check-label" for="small">Small</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="size" value="Medium" class="form-check-input" id="medium">
+                                    <label class="form-check-label" for="medium">Medium</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="size" value="Large" class="form-check-input" id="large">
+                                    <label class="form-check-label" for="large">Large</label>
+                                </div>
+                            </div>
+
+                            <!-- Food Selection -->
+                            <div class="mb-3">
+                                <label for="food" class="form-label"><strong>Choose Food:</strong></label>
+                                <select id="food" class="form-select">
+                                    <option value="Pizza">Pizza</option>
+                                    <option value="Burger">Burger</option>
+                                    <option value="Fries">Fries</option>
+                                    <option value="None">None</option>
+                                </select>
+                            </div>
+
+                            <!-- Pickup Date -->
+                            <div class="mb-3">
+                                <label for="pickup-date" class="form-label"><strong>Pickup Date:</strong></label>
+                                <input type="date" id="pickup-date" class="form-control">
+                            </div>
+
+                            <!-- Pickup Time -->
+                            <div class="mb-3">
+                                <label for="pickup-time" class="form-label"><strong>Pickup Time:</strong></label>
+                                <input type="time" id="pickup-time" class="form-control">
+                            </div>
+
+                            <!-- Special Instructions -->
+                            <div class="mb-3">
+                                <label for="special-instructions" class="form-label"><strong>Special Instructions:</strong></label>
+                                <textarea id="special-instructions" class="form-control" rows="3" placeholder="Any additional instructions..."></textarea>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between">
+                                <button type="submit" class="btn btn-primary">Submit Order</button>
+                                <button type="button" id="load-order" class="btn btn-secondary">Load Last Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <p>This form is now mobile friendly! </p>
+                
+                <!-- Display Order -->
+                <pre id="edited-order" class="mt-4"></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-light text-center py-3 mt-auto">
+      <div class="container">
+          <p class="mb-0">© Pari's Milkshake Point</p>
+      </div>
+  </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>

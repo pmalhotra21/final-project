@@ -1,0 +1,59 @@
+body {
+  background-color: #fce4ec; /* Pinkish background */
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #fff3f9;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: #ff66b2; /* Bright pink navbar */
+}
+
+.navbar-brand {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.navbar .btn-outline-secondary {
+  color: rgb(6, 1, 1);
+  border-color: rgb(205, 50, 50);
+}
+
+.navbar .btn-outline-secondary:hover {
+  background-color: white;
+  color: #ff66b2;
+}
+
+.card {
+  border: 1px solid #ff66b2;
+  border-radius: 10px;
+}
+
+.card-body {
+  background-color: #fff;
+}
+
+button {
+  background-color: #ff66b2;
+  color: white;
+}
+
+button:hover {
+  background-color: #ff3385;
+}
+
+footer {
+  background-color: #ff66b2;
+  color: rgb(10, 1, 1);
+}
+
+#edited-order {
+  white-space: pre-wrap;
+  background-color: #f7f4f4;
+  padding: 20px;
+  border-radius: 5px;
+}
