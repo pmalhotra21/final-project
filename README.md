@@ -9,7 +9,7 @@ Welcome to **Pari's Milkshake Point**, your go-to spot for delicious milkshakes 
 - **Responsive Design**: The website is mobile-friendly, so you can enjoy placing orders from any device.
 - **Last Order Display**: See your last order details by clicking the "Load Last Order" button.
 
-![Milkshake Image](https://via.placeholder.com/800x400?text=Delicious+Milkshake)
+![Milkshake Image](./aaa.png)
 
 ## How it Works
 
@@ -26,9 +26,5 @@ Welcome to **Pari's Milkshake Point**, your go-to spot for delicious milkshakes 
 - **JavaScript**: Fetching and displaying data using asynchronous requests
 - **Bootstrap 5**: Making the website mobile-friendly and responsive
 
-## Preview
 
-Check out how the app looks and works in action!
-
-[![Preview of Milkshake Point](https://via.placeholder.com/200x100?text=App+Preview)](https://pmalhotra21.github.io/dev-harry-final-project/)
 
