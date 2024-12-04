@@ -9,7 +9,7 @@ Welcome to **Pari's Milkshake Point**, your go-to spot for delicious milkshakes 
 - **Responsive Design**: The website is mobile-friendly, so you can enjoy placing orders from any device.
 - **Last Order Display**: See your last order details by clicking the "Load Last Order" button.
 
-![Milkshake Image](./aaa.png)
+![Milkshake Image](./pictures/aaa.png)
 
 ## How it Works
 
